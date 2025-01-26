@@ -43,8 +43,8 @@ def visualize(data):
             model_util[meter['resourceId']]['output'] = 0
         if 'input' in meter['meterDesc']:
             model_util[meter['resourceId']]['input'] += (meter['quantity']['quantity'] * 1000000)
-        else:
-            model_util[meter['resourceId']]['output'] = (meter['quantity']['quantity'] * 1000000)
+        elif 'output' in meter['meterDesc']:
+            model_util[meter['resourceId']]['output'] += (meter['quantity']['quantity'] * 1000000)
     print(json.dumps(model_util, indent=4))
 
 
