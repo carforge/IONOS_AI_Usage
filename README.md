@@ -17,7 +17,7 @@ This repository provides a Python script to track the current Large Language Mod
 **Usage**
 ---------
 
-1. Clone the repository: `git clone https://github.com/your-username/IONOS-Billing-API-Utilization-Tracker.git`
+1. Clone the repository: `git clone https://github.com/carforge/IONOS_AI_Usage.git`
 2. Replace `YOUR_ACCESS_TOKEN` and `YOUR_CONTRACT_ID` in the `IONOS_Billing_API.py` script with your actual credentials.
 3. Run the script: `python IONOS_Billing_API.py`
 
@@ -29,17 +29,18 @@ The script will output a JSON object containing the current LLM utilization data
 Example output:
 ```json
 {
-    "Llama 3.1 405B": {
+    "_SOME-METER-ID_": {
         "mdl_name": "Llama 3.1 405B",
-        "input": 1000000,
-        "output": 500000
+        "input": 111.0,
+        "output": 111.0
     },
-    "Llama 2.0 175B": {
-        "mdl_name": "Llama 2.0 175B",
-        "input": 2000000,
-        "output": 1000000
+    "_SOME-METER-ID_": {
+        "mdl_name": "Mixtral 8x7B Instruct",
+        "input": 111.0,
+        "output": 111.0
     }
 }
+
 ```
 **Contributing**
 ------------
